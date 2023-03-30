@@ -1,0 +1,183 @@
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=IM+Fell+French+Canon+SC&family=Imperial+Script&family=Imprima&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Imperial+Script&family=Imprima&display=swap');
+
+/* font-family: 'Imperial Script', cursive;
+font-family: 'Imprima', sans-serif; */
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bege: #EDDDD4;
+    --rosa: #E87A70;
+    --roxo: #503950;
+    --branco: #FBFAF7;
+    
+}
+
+nav{
+    height: 3rem;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#img_logo{
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.links{
+    margin-right: 10%;
+}
+
+.links a{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--roxo);
+    position: relative;
+}
+
+.links a:hover{
+    color: var(--rosa);
+}
+
+
+/* main */
+
+.container_apresentacao{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    background-image: url('../imagens/fundoakali.png');
+    background-size: cover;
+}
+
+#imagemHome{
+    width: 100%;
+    border-radius: 2rem;
+    height: 100%;
+}
+
+.apresentacao{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--rosa);
+    text-shadow: 2px 2px 5px var(--roxo);
+    
+}
+
+h1{
+    font-family: 'Lora', serif;
+    color: var(--roxo);
+}
+
+p{
+    font-family: 'Imprima', sans-serif;
+}
+
+#linkSeta{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 10%;
+}
+
+#linkSeta:hover{
+    color: rgba(18, 1, 34, 0.829);
+
+}
+
+#seta{
+    width: 10%;
+    position: relative;
+    top: 1.2rem
+}
+
+.empresaMissao{
+    box-shadow: 0 0 1em var(--rosa);
+    margin: 0 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--bege);
+}
+
+.empresa{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;   
+    margin-top: -1rem;
+}
+
+h1, p{
+    padding: 2%;
+}
+
+.missao{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    padding: 1rem;
+
+}
+.gambiarra{
+    height: 0rem;
+}
+
+footer{
+    height: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 600px){
+    .container_apresentacao, .empresa, .missao{
+        flex-direction: row;       
+    }
+
+    .container_apresentacao{
+        padding: 5%;
+    }
+
+    .akali{
+        margin-top: 10%;
+    }
+
+    #seta{
+        top:0.8rem
+    }
+
+    .apresentacao h1{
+        font-size: 2rem;
+    }
+    .apresentacao p{
+        font-size: 1.2em;
+    }
+    
+
+}
+
+@media only screen and (min-width: 800px){
+
+    .akali{
+        font-size: 1.3rem;
+    }
+
+    #seta{
+        top: 1.2rem;
+    }
+
+    .apresentacao{
+        position: relative;
+        top: 3rem;
+    }
+
+
+}
+
